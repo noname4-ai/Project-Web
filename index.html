@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="permainan">
+    <div class="papan-skor">
+      <span>Skor <strong id="skor">0</strong></span>
+      <span>Rekor <strong id="tertinggi">0</strong></span>
+    </div>
+
+    <canvas id="game" width="400" height="400"></canvas>
+
+    <p id="pesan" class="pesan">Tekan tombol arah atau geser layar untuk mulai.</p>
+
+    <!-- Tombol arah di layar, hanya tampil di perangkat sentuh -->
+    <div class="dpad" aria-label="Tombol arah">
+      <button class="atas" type="button" data-arah="atas" aria-label="Atas">&#9650;</button>
+      <button class="kiri" type="button" data-arah="kiri" aria-label="Kiri">&#9664;</button>
+      <button class="bawah" type="button" data-arah="bawah" aria-label="Bawah">&#9660;</button>
+      <button class="kanan" type="button" data-arah="kanan" aria-label="Kanan">&#9654;</button>
+      <span class="tengah" aria-hidden="true"></span>
+    </div>
+
+    <button id="tombol-ulang" type="button">Main lagi</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
